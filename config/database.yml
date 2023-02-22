@@ -1,0 +1,8 @@
+development:
+  adapter: mysql2
+#  encoding: utf8mb4
+  database: crypto_vallet
+  username: bernardo
+  password: 12345678
+  host: 192.168.0.105
+  port: 3306

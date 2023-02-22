@@ -1,0 +1,309 @@
+Started GET "/" for ::1 at 2023-02-21 22:51:40 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (5.4ms)
+Completed 200 OK in 20ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2023-02-21 22:57:15 -0300
+  
+Mysql2::Error::ConnectionError (Can't connect to MySQL server on '192.168.0.105:3306' (110)):
+  
+mysql2 (0.5.3) lib/mysql2/client.rb:90:in `connect'
+mysql2 (0.5.3) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.2.8.1) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+activerecord (5.2.8.1) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+activerecord (5.2.8.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.8.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.8.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.8.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.8.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.8.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.8.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.8.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.8.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.8.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-02-21 23:00:26 -0300
+  [1m[35m (19.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 20ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2023-02-21 23:00:29 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2023-02-21 23:00:31 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (9.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE DATABASE `crypto_vallet` DEFAULT CHARACTER SET `utf8mb4`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE DATABASE `crypto_vallet` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (21.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT GET_LOCK('3891576704604132390', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateMoedas (20230222032842)
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE `moedas` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `nome` varchar(255), `sigla` varchar(255), `url_imagem` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20230222032842_create_moedas.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (11.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20230222032842')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2023-02-22 05:24:57', '2023-02-22 05:24:57')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('3891576704604132390')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2023-02-22 02:26:08 -0300
+  [1m[35m (2.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 17ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/aa" for ::1 at 2023-02-22 02:26:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/aa"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/moedas" for ::1 at 2023-02-22 02:26:26 -0300
+Processing by MoedasController#index as HTML
+  Rendering moedas/index.html.erb within layouts/application
+  [1m[36mMoeda Load (1.4ms)[0m  [1m[34mSELECT `moedas`.* FROM `moedas`[0m
+  ↳ app/views/moedas/index.html.erb:16
+  Rendered moedas/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 487ms (Views: 460.2ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/moedas/new" for ::1 at 2023-02-22 02:26:39 -0300
+Processing by MoedasController#new as HTML
+  Rendering moedas/new.html.erb within layouts/application
+  Rendered moedas/_form.html.erb (31.3ms)
+  Rendered moedas/new.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 71ms (Views: 50.2ms | ActiveRecord: 13.0ms)
+
+
+Started POST "/moedas" for ::1 at 2023-02-22 02:27:00 -0300
+Processing by MoedasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsLssNZbNftpB/MjhpI6lV1YdDtXq7abgqycjbOezSQSA2WhPW/Gy5whZ8TCoW2vK+N7GLQOn3YNhZJpGAeMRg==", "moeda"=>{"nome"=>"BitCoin", "sigla"=>"BT", "url_imagem"=>"aaaaaaaaaaa"}, "commit"=>"Create Moeda"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/moedas_controller.rb:27
+  [1m[36mMoeda Create (1.1ms)[0m  [1m[32mINSERT INTO `moedas` (`nome`, `sigla`, `url_imagem`, `created_at`, `updated_at`) VALUES ('BitCoin', 'BT', 'aaaaaaaaaaa', '2023-02-22 05:27:00', '2023-02-22 05:27:00')[0m
+  ↳ app/controllers/moedas_controller.rb:27
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/moedas_controller.rb:27
+Redirected to http://localhost:3000/moedas/1
+Completed 302 Found in 23ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/moedas/1" for ::1 at 2023-02-22 02:27:00 -0300
+Processing by MoedasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMoeda Load (0.8ms)[0m  [1m[34mSELECT  `moedas`.* FROM `moedas` WHERE `moedas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/moedas_controller.rb:63
+  Rendering moedas/show.html.erb within layouts/application
+  Rendered moedas/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 20.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/moedas" for ::1 at 2023-02-22 02:27:05 -0300
+Processing by MoedasController#index as HTML
+  Rendering moedas/index.html.erb within layouts/application
+  [1m[36mMoeda Load (1.0ms)[0m  [1m[34mSELECT `moedas`.* FROM `moedas`[0m
+  ↳ app/views/moedas/index.html.erb:16
+  Rendered moedas/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/moedas/1" for ::1 at 2023-02-22 02:27:11 -0300
+Processing by MoedasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMoeda Load (1.2ms)[0m  [1m[34mSELECT  `moedas`.* FROM `moedas` WHERE `moedas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/moedas_controller.rb:63
+  Rendering moedas/show.html.erb within layouts/application
+  Rendered moedas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 35.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/moedas/1/edit" for ::1 at 2023-02-22 02:27:16 -0300
+Processing by MoedasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMoeda Load (1.4ms)[0m  [1m[34mSELECT  `moedas`.* FROM `moedas` WHERE `moedas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/moedas_controller.rb:63
+  Rendering moedas/edit.html.erb within layouts/application
+  Rendered moedas/_form.html.erb (3.1ms)
+  Rendered moedas/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 27ms (Views: 22.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/moedas/1/edit" for ::1 at 2023-02-22 02:27:22 -0300
+Processing by MoedasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMoeda Load (1.3ms)[0m  [1m[34mSELECT  `moedas`.* FROM `moedas` WHERE `moedas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/moedas_controller.rb:63
+  Rendering moedas/edit.html.erb within layouts/application
+  Rendered moedas/_form.html.erb (3.3ms)
+  Rendered moedas/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 19ms (Views: 15.2ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/moedas/1" for ::1 at 2023-02-22 02:27:26 -0300
+Processing by MoedasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"maf04WUueGqjOuz+iXelYXIySKK4+BIVI+Ovs+pacfXrAB377qmy5suWPJRQzFkfZn5M9uVTBV+kJ+cLFU/ZZQ==", "moeda"=>{"nome"=>"BitCoin222", "sigla"=>"BT", "url_imagem"=>"aaaaaaaaaaa"}, "commit"=>"Update Moeda", "id"=>"1"}
+  [1m[36mMoeda Load (0.9ms)[0m  [1m[34mSELECT  `moedas`.* FROM `moedas` WHERE `moedas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/moedas_controller.rb:63
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/moedas_controller.rb:40
+  [1m[36mMoeda Update (6.1ms)[0m  [1m[33mUPDATE `moedas` SET `nome` = 'BitCoin222', `updated_at` = '2023-02-22 05:27:26' WHERE `moedas`.`id` = 1[0m
+  ↳ app/controllers/moedas_controller.rb:40
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/moedas_controller.rb:40
+Redirected to http://localhost:3000/moedas/1
+Completed 302 Found in 14ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/moedas/1" for ::1 at 2023-02-22 02:27:26 -0300
+Processing by MoedasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMoeda Load (0.7ms)[0m  [1m[34mSELECT  `moedas`.* FROM `moedas` WHERE `moedas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/moedas_controller.rb:63
+  Rendering moedas/show.html.erb within layouts/application
+  Rendered moedas/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/moedas/1" for ::1 at 2023-02-22 02:27:35 -0300
+Processing by MoedasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zN14h6feCAaAmalmTBl37KiIfiJLbD9Kb7809w5O1G0pjNZFI6/xjvYMSRwsMk2y1Ps9ghOIvA9mXbilIfjqEQ==", "id"=>"1"}
+  [1m[36mMoeda Load (0.7ms)[0m  [1m[34mSELECT  `moedas`.* FROM `moedas` WHERE `moedas`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/moedas_controller.rb:63
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/moedas_controller.rb:52
+  [1m[36mMoeda Destroy (3.0ms)[0m  [1m[31mDELETE FROM `moedas` WHERE `moedas`.`id` = 1[0m
+  ↳ app/controllers/moedas_controller.rb:52
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/moedas_controller.rb:52
+Redirected to http://localhost:3000/moedas
+Completed 302 Found in 9ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/moedas" for ::1 at 2023-02-22 02:27:35 -0300
+Processing by MoedasController#index as HTML
+  Rendering moedas/index.html.erb within layouts/application
+  [1m[36mMoeda Load (0.7ms)[0m  [1m[34mSELECT `moedas`.* FROM `moedas`[0m
+  ↳ app/views/moedas/index.html.erb:16
+  Rendered moedas/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2023-02-22 02:27:38 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/bernardo/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
